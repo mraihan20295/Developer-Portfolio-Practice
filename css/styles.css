@@ -34,15 +34,21 @@ h1,
 h2,
 h3 {
     color: var(--color-headings);
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
     line-height: 1.1;
 }
 
 h4,
 h5 {
     color: var(--color-headings-darker);
+    margin-top: 0;
     margin-bottom: 1rem;
     line-height: 1.1;
+}
+
+h5 {
+    color: var(--color-body);
 }
 
 h1 {
@@ -85,13 +91,14 @@ p {
 
 .btn--outline {
     background: #fff;
-    border: 2px solid var(--color-accent);
+    outline: 2px solid var(--color-accent);
     color: var(--color-accent);
+    transition: all 0.2s;
 }
 
 .btn--outline:hover {
     background: var(--color-accent);
-    border: 0;
+    outline: 0;
     color: #fff;
 }
 
@@ -121,7 +128,7 @@ p {
 .nav__list {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     padding: 0;
 }
 
@@ -144,18 +151,58 @@ p {
 }
 
 
+/* Header Area */
+
+.header {
+    padding: 3rem 0;
+}
+
+.header .nav__list {
+    margin-left: auto;
+    margin-right: 4rem;
+}
 
 /* Hero Area */
 
 .hero {
-    height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(/images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.hero__content {
+    text-align: left;
+}
+
+.hero__heading-before {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.hero__heading {
+    margin-top: 0;
+}
+
+.hero__image {
+    margin-bottom: -8px;
+    margin-right: 3rem;
 }
 
 
 /* About Me Area */
 
-.about .container {
-    margin: 10rem auto;
+.about {
+    margin-bottom: 10rem;
+}
+
+.about.container {
     padding: 10rem;
     border-radius: 10px;
 }
@@ -185,6 +232,72 @@ p {
 
 .about__table th,
 .about__table td {
-    /* border: 1px solid black; */
     padding: 0 2.5rem;
+}
+
+
+/* Skills Area */
+
+.skillset {
+    margin-bottom: 10rem;
+}
+
+.skillset__information {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+}
+
+.skill {
+    text-align: left;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.skill__card {
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill__card:hover {
+    outline: 2px solid var(--color-accent);
+}
+
+.skill__card>h3 {
+    font-size: var(--font-size-h3-small);
+}
+
+.skill__card>p {
+    font-size: var(--font-size-body-small);
+}
+
+
+/* Resume Area */
+
+.resume {
+    margin-bottom: 10rem;
+}
+
+.resume__summary {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 5rem;
+    text-align: left;
+}
+
+.resume__heading {
+    font-size: 100px;
+    margin-bottom: 4rem;
+
+}
+
+.resume__content>p {
+    margin-top: 2rem;
+}
+
+.resume__content {
+    border-bottom: 2px solid #D1D1D1;
+    margin-bottom: 3rem;
 }
