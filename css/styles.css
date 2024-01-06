@@ -68,3 +68,41 @@ h5 {
 p {
     margin-top: 0;
 }
+
+/* Buttons */
+
+.btn {
+    border: 0;
+    border-radius: 5px;
+    background: var(--color-accent);
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.8rem 3.5rem;
+}
+
+.btn--outline {
+    background: #fff;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btn--outline:hover {
+    background: var(--color-accent);
+    border: 0;
+    color: #fff;
+}
+
+.btn--icon {
+    display: inline-flex;
+    gap: 5px;
+    padding: 1.8rem;
+}
+
+/* Container (1140px) */
+
+.container {
+    max-width: 1140px;
+}
